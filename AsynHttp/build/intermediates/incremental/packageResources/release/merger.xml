@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/dream/Documents/work/AsynHttp/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/dream/Documents/work/AsynHttp/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/dream/Documents/work/AsynHttp/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/dream/Documents/work/AsynHttp/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/dream/Documents/work/AsynHttp/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/Users/dream/Documents/work/AsynHttp/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+        </source>
+        <source path="/Users/dream/Documents/work/AsynHttp/build/generated/res/rs/release" />
+        <source path="/Users/dream/Documents/work/AsynHttp/build/generated/res/generated/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/dream/Documents/work/AsynHttp/build-types/release/res" />
+    </dataSet>
+
+</merger>
