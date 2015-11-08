@@ -55,20 +55,30 @@ public class LoginActivity extends Activity implements OnClickListener {
 		 * @param password
 		 */
 		public void login(String username,String password){
-			Toast.makeText(this, "username"+username+"password"+password, Toast.LENGTH_LONG).show();
-			if(username == null || password == null){
-				Toast.makeText(this, "登陆失败", Toast.LENGTH_LONG).show();
-				throw new NullPointerException("密码和用户不能为空");
-				
-			}else{
+//			Toast.makeText(this, "username"+username+"password"+password, Toast.LENGTH_LONG).show();
+//			if(username == null || password == null){
+////				Toast.makeText(this, "登陆失败", Toast.LENGTH_LONG).show();
+//				throw new NullPointerException("密码和用户不能为空");
+//				
+//			}else{
 				if(username.equals("james") && password.equals("123456")){
-					Toast.makeText(this, "登陆成功", Toast.LENGTH_LONG).show();
-					
+//					Toast.makeText(this, "登陆成功", Toast.LENGTH_LONG).show();
+					checkLogin(true);
 				}else{
-					Toast.makeText(this, "登陆失败", Toast.LENGTH_LONG).show();
+//					Toast.makeText(this, "登陆失败", Toast.LENGTH_LONG).show();
+					checkLogin(false);
 				}
 				
-			}
+//			}
 			
+		}
+		
+		public void checkLogin(boolean isLogin){
+			if(isLogin){
+				Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_LONG).show();
+				
+			}else{
+				Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_LONG).show();
+			}
 		}
 }

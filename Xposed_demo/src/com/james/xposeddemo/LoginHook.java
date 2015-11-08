@@ -24,14 +24,15 @@ public class LoginHook implements IXposedHookLoadPackage {
 	public void handleLoadPackage(LoadPackageParam lpparam) throws Throwable {
 		// TODO Auto-generated method stub
 		Log.e(TAG, "Loaded app: " + lpparam.packageName);
+		XposedBridge.log("Loaded app: " + lpparam.packageName);
 
-		// 判断是否是要Hook的包名(被Hook函数所在的包为com.droider.crackme0201)
+		// 判断是否是要Hook的包名(被Hook函数所在的包为com.example.xposedlogin)
 		if (lpparam.packageName.equals("com.example.xposedlogin")) {
 			XposedBridge.log("Loaded App:" + lpparam.packageName);
 
 			// 查找要Hook的函数
 			XposedHelpers.findAndHookMethod(
-					"com.example.xposedlogin.LoginActivity", // 被Hook函数所在的类com.droider.crackme0201.MainActivity
+					"com.example.xposedlogin.LoginActivity", // 被Hook函数所在的类com.example.xposedlogin.LoginActivity
 					lpparam.classLoader, "login", // 被Hook函数的名称checkSN
 					String.class, // 被Hook函数的第一个参数String
 					String.class, // 被Hook函数的第二个参数String
