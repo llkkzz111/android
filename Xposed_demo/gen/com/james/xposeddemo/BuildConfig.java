@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.james.xposed_demo;
+package com.james.xposeddemo;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

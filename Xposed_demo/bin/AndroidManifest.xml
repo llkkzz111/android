@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.james.xposed_demo"
+    package="com.james.xposeddemo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,15 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         
-        <activity 
-            android:name="com.james.xposed_demo.MyActivity">
-            	<intent-filter >
-            	    <action android:name="android.intent.action.MAIN"/>
-            	    <category android:name="android.intent.category.LAUNCHER"/>
-            	</intent-filter>
-            
-        </activity>
-        
+
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
@@ -30,7 +22,7 @@
             android:value="2.1*" />
         <meta-data
             android:name="xposeddescription"
-            android:value="Collection of different tweaks" />
+            android:value="Xposed demo Hook " />
     </application>
 
 </manifest>
